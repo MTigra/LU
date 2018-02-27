@@ -82,7 +82,7 @@ namespace sr
         }
     }
 
-    public struct Person : IComparable<Person>
+    internal struct Person : IComparable<Person>
     {
         //Fields
         private string name;
@@ -93,9 +93,9 @@ namespace sr
         public Person(string name, string lastname, int age)
         {
             
-            Name = name;
-            Lastname = lastname;
-            Age = age;
+            this.name = name;
+            this.lastname = lastname;
+            this.age = age;
         }
 
         public string Lastname
